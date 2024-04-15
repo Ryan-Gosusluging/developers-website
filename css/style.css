@@ -364,7 +364,7 @@ p{
     padding-top: 56px;
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 395px){
     main{
         width: 100%;
         max-width: 390px;
