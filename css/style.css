@@ -1,0 +1,446 @@
+body{
+    background-color: #F9F9F9;
+    width: 1920px;
+    height: 1080px;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    font-size: 32px;
+    color:black;
+    margin:0;
+    padding:0;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin:0;
+    padding:0;
+}
+
+.wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    background: #34547A;
+    font-weight: 400;
+    color: white;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus, .button:active{
+    background: #18293d;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header_logo{
+    padding-top: 50px;
+}
+ 
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_element{
+    margin-right: 42px;
+}
+
+.header_element:last-child{
+    margin-right: 0;
+}
+
+.header_link{
+    font-size: 16px;
+    font-weight: 400px;
+    color: black;
+    text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+    color: #34547A;
+}
+
+.start{
+    max-width: 1920px;
+    width: 100%;
+    height: 700px;
+    background-color: #EEEFF1;
+}
+
+.start_picture{
+    position: absolute;
+    width: 357px;
+    height: 234px;
+    left: 487px;
+    top: 271px;
+}
+
+.start_title{
+    position: absolute;
+    width: 541px;
+    height: 125px;
+    left: 975px;
+    top: 250px;
+    text-align: left;
+}
+
+.start_title h1{
+    font-size: 48px;
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+
+.start_title p{
+    padding-bottom: 60px;
+}
+
+.write_me{
+    padding: 25px 41px;
+    width: 225px;
+    height: 65px;
+    font-size: 16px;
+}
+
+.about_me{
+    margin-top: 119px;
+    margin-bottom: 100px;
+    text-align: center;
+    width: 540px;
+    height: 147px;
+}
+
+.about_me h2{
+    padding-bottom: 50px;
+}
+
+.blue_projects{
+    background-color: #34547A;
+    width: 1920px;
+    height: 250px;
+}
+
+.project_card{
+    display: grid;
+    grid-template-columns: repeat(6, 141px);
+    padding: 100px 424px 100px 405px;
+    gap: 49px;
+}
+
+.my_skills{
+    padding: 102px 385px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    width: 1150px;
+    height: 450px;
+}
+
+.my_skills_text h3{
+    padding-top: 88px;
+    padding-bottom: 50px;
+}
+
+.my_skills_text p{
+    padding-bottom: 20px;
+}
+
+.scale{
+    margin-bottom: 30px;
+}
+
+.scale_gray{
+    width: 445px;
+    height: 4px;
+    background-color: #C4C4C4;
+
+}
+
+.scale_blue{
+    width: 349px;
+    height: 4px;
+    background-color: #34547A;
+    margin-top: -4px;
+}
+
+.scale:last-child{
+    margin-bottom: 0;
+}
+
+.how_work{
+    background-color: #EEEFF1;
+    width: 1920px;
+    height: 1004px;
+}
+
+.how_work_title{
+    text-align: center;
+    width: 540px;
+    height: 147px;
+    padding-top: 100px;
+}
+
+.how_work_title h4{
+    padding-bottom: 50px;
+}
+
+.video{
+    background: url('../img/Rectangle 5.png') no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 57px;
+    width: 1110px;
+    height: 600px;
+}
+
+.video::after{
+    content: '';
+    display: block;
+    background: url('../img/play-button.svg');
+    width: 100px;
+    height: 100px;
+}
+
+.photos{
+    display: grid;
+    grid-template-columns: repeat(4,480px);
+    grid-template-rows: repeat(2,480px);
+    margin-top: 28px;
+    padding: 0px;
+}
+
+.microsoft{
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.m{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.last-block{
+    margin-top: 100px;
+    background-color: #EEEFF1;
+    width: 1920px;
+    height: 762px;
+}
+
+.last_text-block{
+    padding-top: 100px;
+    width: 540px;
+    height: 147px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.last_text-block p{
+    padding-top: 50px;
+}
+
+.data{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.information{
+    width: 255px;
+    height: 50px;
+    border: none;
+    text-indent: 20px;
+}
+
+.information::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+
+.information1{
+    width: 540px;
+    padding-top:17px;
+    padding-bottom: 143px;
+    text-indent: 20px;
+    border: none;
+}
+
+.information1::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+
+.last_button{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.sub{
+    padding: 20px 19px;
+    width: 190px;
+    height: 55px;
+    font-size: 14px;
+}
+
+.footer{
+    background-color: #34547A;
+    width: 1920px;
+    height: 151px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_text{
+    margin-left: 406px;
+}
+
+.name_author{
+    font-weight: 500;
+    font-size: 21px;
+    text-align: left;
+    color:white;
+    padding-top: 50px;
+}
+
+.rights_protection{
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    color:white;
+    padding-top:20px;
+}
+
+.ss{
+    display:grid;
+    grid-template-columns: repeat(3,43.75px);
+    gap: 22px;
+    padding-right: 389px;
+    padding-top: 56px;
+}
+
+@media screen and (max-width: 390px){
+    main{
+        width: 100%;
+        max-width: 390px;
+    }
+    .start{
+        width: 100%;
+        max-width: 390px;
+    }
+    .start_picture{
+        left: 60px;
+    }
+    .blue_projects{
+        width: 100%;
+        max-width: 390px;
+    }
+    .about_me{
+        margin-top: 119px;
+        margin-bottom: 100px;
+        width: 340px;
+        height: 147px;
+    }
+    .my_skills{
+        width: 100%;
+        max-width: 390px;
+    }
+    .project_card{
+        width: 390px;
+        grid-template-columns: repeat(6, 141px);
+        padding: 100px 424px 100px 405px;
+        gap: 49px;
+    }
+    .how_work{
+        width: 100%;
+        max-width: 390px;
+    }
+    .how_work_title{
+        width: 340px;
+        height: 147px;
+    }
+    .video{
+        max-width: 390px;
+        max-height: 600px;
+    }
+    .microsoft{
+        margin-top: 0;
+    }
+    .m{
+        display: flex;
+        justify-content: center;
+    }
+    .last-block{
+        width: 100%;
+        max-width: 390px;
+    }
+    .last_text-block{
+        width: 340px;
+        height: 147px;
+    }
+    .footer{
+        width: 100%;
+        max-width: 390px;
+    }
+    .photos{
+        grid-template-columns: repeat(1,390px);
+        grid-template-rows: repeat(8,390px);
+        margin-top: 28px;
+        padding: 0px;
+    }
+    .photos_element{
+        width: 390px;
+        height: 390px;
+    }
+    .footer_text{
+        margin-left: 10%
+    }
+    .social_network{
+        margin-right: 10%;
+    }
+}
