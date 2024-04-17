@@ -1,6 +1,8 @@
 body{
+    position: absolute;
     background-color: #F9F9F9;
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     height: 1080px;
     font-family: Roboto;
     margin: 0;
@@ -54,26 +56,28 @@ p{
 }
 
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    position: absolute;
 }
 
 .header_wrapper{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
     justify-content: space-between;
 }
 
-.header_logo{
-    padding-top: 50px;
+.header_logo_picture{
+    margin-top: 50px;
+    width: 96px;
+    height: 60px;
 }
  
 .header_list{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 76px;
+    width: 611px;
+    height: 16px;
 }
 
 .header_element{
@@ -89,6 +93,8 @@ p{
     font-weight: 400px;
     color: black;
     text-decoration: none;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
 }
 
 .header_link:hover, .header_link:focus, .header_link:active{
@@ -96,7 +102,6 @@ p{
 }
 
 .start{
-    max-width: 1920px;
     width: 100%;
     height: 700px;
     background-color: #EEEFF1;
@@ -154,7 +159,7 @@ p{
 
 .blue_projects{
     background-color: #34547A;
-    width: 1920px;
+    width: 100%;
     height: 250px;
 }
 
@@ -166,7 +171,8 @@ p{
 }
 
 .my_skills{
-    margin: 102px 385px;
+    margin-top: 102px;
+    margin-bottom: 101px;
     display: flex;
     justify-content: center;
     gap: 150px;
@@ -215,7 +221,7 @@ p{
 
 .how_work{
     background-color: #EEEFF1;
-    width: 1920px;
+    width: 100%;
     height: 1004px;
 }
 
@@ -249,6 +255,7 @@ p{
 }
 
 .photos{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4,480px);
     grid-template-rows: repeat(2,480px);
@@ -271,7 +278,7 @@ p{
 .last-block{
     margin-top: 100px;
     background-color: #EEEFF1;
-    width: 1920px;
+    width: 100%;
     height: 762px;
 }
 
@@ -347,7 +354,7 @@ p{
 
 .footer{
     background-color: #34547A;
-    width: 1920px;
+    width: 100%;
     height: 151px;
     display: flex;
     justify-content: space-between;
