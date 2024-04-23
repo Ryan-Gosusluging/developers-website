@@ -36,6 +36,15 @@ p{
     margin: 0 auto;
 }
 
+.wrapper_text{
+    max-width: 540px;
+    margin: 0 auto; 
+}
+
+textarea { 
+    resize: none;
+}
+/* Button settings */
 .button {
     display: inline-block;
     background: #34547A;
@@ -49,15 +58,11 @@ p{
     cursor: pointer;
 }
 
-textarea { 
-    resize: none;
-  }
-
 .button:hover, .button:focus, .button:active{
     background: #0c3768;
     color: #00BBD3;
 }
-
+/* Header settings */
 .header{
     width: 100%;
     background-color: #EEEFF1 ;
@@ -101,7 +106,7 @@ textarea {
 .header_link:hover, .header_link:focus, .header_link:active{
     color: #34547A;
 }
-
+/* Start settings */
 .start{
     background-color: #EEEFF1;
 }
@@ -140,12 +145,7 @@ textarea {
     padding: 25px 41px;
     font-size: 16px;
 }
-
-.wrapper1{
-    max-width: 540px;
-    margin: 0 auto; 
-}
-
+/* About_me settings */
 .about_me{
     margin-top: 119px;
     margin-bottom: 100px;
@@ -155,7 +155,7 @@ textarea {
 .about_me h2{
     margin-bottom: 50px;
 }
-
+/* Blue_projects settings */
 .blue_projects{
     background-color: #34547A;
     width: 100%;
@@ -170,7 +170,7 @@ textarea {
     padding-top:100px;
     padding-bottom:100px;
 }
-
+/* My_skills settings */
 .my_skills{
     margin-top: 102px;
     margin-bottom: 101px;
@@ -221,11 +221,10 @@ textarea {
     max-width: 100%;
     max-height: 100%;
 }
-
+/* How_work settings */
 .how_work{
     background-color: #EEEFF1;
     width: 100%;
-    /*height: 1004px;*/
 }
 
 .how_work_title{
@@ -250,10 +249,8 @@ textarea {
     margin-top: 57px;
     max-width: 1110px;
     height: 65vh;
-    /*height: 600px;*/
     width: 58%;
 }
-
 
 .video::after{
     content: '';
@@ -262,7 +259,7 @@ textarea {
     width: 100px;
     height: 100px;
 }
-
+/* Photos settings */
 .photos{
     display: grid;
     grid-template-columns: repeat(4,25vw);
@@ -305,12 +302,12 @@ textarea {
 	background: url('../img/view.svg') no-repeat;
     z-index: 100;
 }
-
+/* Microsoft_photos settings */
 .microsoft{
     margin-top: 72px;
 }
 
-.m{
+.microsoft_list{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -321,16 +318,15 @@ textarea {
     gap:0;
 }
 
-.microsoftik{
+.microsoft_photo{
     max-width: 100%;
     max-height: 100%;
 }
-
+/* Final main block settings */
 .last-block{
     margin-top: 100px;
     padding-bottom: 100px;
     background-color: #EEEFF1;
-    width: 100%;
 }
 
 .last_text-block{
@@ -396,10 +392,9 @@ textarea {
 .sub{
     padding: 20px 19px;
     width: 190px;
-    height: 55px;
     font-size: 14px;
 }
-
+/* Footer settings */
 .footer{
     background-color: #34547A;
     display: flex;
@@ -435,95 +430,16 @@ textarea {
     gap: 22px;
 }
 
-/*@media screen and (min-width: 360px) and (max-width: 430px){
-    main{
-        width: 100%;
-        max-width: 411px;
-    }
-    .start{
-        width: 100%;
-        max-width: 395px;
-    }
-    .start_picture{
-        left: 60px;
-    }
-    .blue_projects{
-        width: 100%;
-        max-width: 395px;
-    }
-    .about_me{
-        margin-top: 119px;
-        margin-bottom: 100px;
-        width: 340px;
-        height: 147px;
-    }
-    .my_skills{
-        width: 100%;
-        max-width: 395px;
-    }
-    .how_work{
-        width: 100%;
-        max-width: 395px;
-    }
-    .how_work_title{
-        width: 340px;
-        height: 147px;
-    }
-    .scale_gray{
-        width: 360px;
-    }
-    .scale_blue{
-        width: 266px;
-    }
-    .video{
-        max-width: 395px;
-        height: 700px;
-        background-position: center center;
-    }
-    .last-block{
-        width: 100%;
-        max-width: 395px;
-        margin-top: 50px;
-    }
-    .last_text-block{
-        width: 340px;
-        height: 147px;
-    }
-    .photos{
-        grid-template-columns: repeat(2,195px);
-        grid-template-rows: repeat(4,195px);
-        margin-top: 28px;
-        padding: 0px;
-    }
-    .photochka{
-        width: 195px;
-        height: 195px;
-    }
-    .photos_element{
-        width: 195px;
-        height: 195px;
-    }
-    .message{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .sub{
-        width: 250px;
-        height: 75px;
-        font-size: 18px;
-    }
-    .footer{
-        width: 100%;
-        max-width: 395px;
-    }
-}
-*/
+/* Media screen settings */
 @media screen and (max-width: 1165px){
     .my_skills{
         gap: 50px;
         margin-top: 0;
     }
     .my_skills_text h3{
+        text-align: center;
+    }
+    .my_skills_text p{
         text-align: center;
     }
 }
@@ -534,6 +450,7 @@ textarea {
     }
     .video{
         width: 100vw;
+        height: 45vh;
     }
 }
 @media screen and (max-width: 200px){
@@ -547,5 +464,25 @@ textarea {
     }
     .information{
         max-width: 345px;
+    }
+}
+@media screen and (max-width: 1042px){
+    .start_title{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 555px){
+    .photos{
+        grid-template-columns: repeat(2,50vw);
+        grid-template-rows: repeat(4,50vw);
+    }
+}
+@media screen and (max-width: 715px){
+    .header_list{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .header_wrapper{
+        justify-content: space-around;
     }
 }
