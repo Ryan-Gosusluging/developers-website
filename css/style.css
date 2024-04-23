@@ -60,7 +60,7 @@ textarea {
 
 .header{
     width: 100%;
-    position: absolute;
+    background-color: #EEEFF1 ;
 }
 
 .header_wrapper{
@@ -103,50 +103,41 @@ textarea {
 }
 
 .start{
-    height: 700px;
     background-color: #EEEFF1;
-    display: flex;
-    justify-content: center;
 }
 
 .start_elements{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 131px;
+    padding-top: 142px;
+    padding-bottom: 146px;
 }
 
-/*.start_picture{
+.start_picture{
     width: 100%;
     max-width: 357px;
-    max-height: 234px;
+    height: auto;
 }
 
 .start_title{
-    width: 541px;
-    height: 125px;
+    max-width: 540px;
     text-align: left;
-}*/
+}
 
 .start_title h1{
     font-size: 48px;
     font-weight: 500;
     margin-bottom: 60px;
-    width: 541px;
-    height: 45px;
 }
 
 .start_title p{
     margin-bottom: 60px;
-    width: 540px;
-    height: 67px;
 }
 
 .write_me{
     padding: 25px 41px;
-    width: 225px;
-    height: 65px;
     font-size: 16px;
 }
 
@@ -197,7 +188,6 @@ textarea {
 
 .my_skills_text h3{
     margin-bottom: 50px;
-    height: 30px;
 }
 
 .my_skills_text p{
@@ -235,7 +225,7 @@ textarea {
 .how_work{
     background-color: #EEEFF1;
     width: 100%;
-    height: 1004px;
+    /*height: 1004px;*/
 }
 
 .how_work_title{
@@ -247,15 +237,23 @@ textarea {
     margin-bottom: 50px;
 }
 
+.videoclip{
+    padding-bottom: 100px;
+}
+
 .video{
     background: url('../img/Rectangle 5.png') no-repeat;
+    background-position: center center;
     display:flex;
     justify-content: center;
     align-items: center;
     margin-top: 57px;
     max-width: 1110px;
-    height: 600px;
+    height: 65vh;
+    /*height: 600px;*/
+    width: 58%;
 }
+
 
 .video::after{
     content: '';
@@ -267,10 +265,15 @@ textarea {
 
 .photos{
     display: grid;
-    grid-template-columns: repeat(4,480px);
-    grid-template-rows: repeat(2,480px);
+    grid-template-columns: repeat(4,25vw);
+    grid-template-rows: repeat(2,25vw);
     margin-top: 28px;
     padding: 0px;
+}
+
+.photochka{
+    width: 100%;
+    height: 100%;
 }
 
 .gradient{
@@ -296,7 +299,7 @@ textarea {
 .gradient:hover:before {
 	content: '';
     display: inline-block;
-	width: 100px;
+    width: 100px;
 	height: 100px;
     position: absolute;    
 	background: url('../img/view.svg') no-repeat;
@@ -426,13 +429,13 @@ textarea {
     font-size: 13px;
 }
 
-.ss{
+.vkontakte{
     display: flex;
     flex-wrap: wrap;
     gap: 22px;
 }
 
-@media screen and (min-width: 360px) and (max-width: 430px){
+/*@media screen and (min-width: 360px) and (max-width: 430px){
     main{
         width: 100%;
         max-width: 411px;
@@ -512,5 +515,37 @@ textarea {
     .footer{
         width: 100%;
         max-width: 395px;
+    }
+}
+*/
+@media screen and (max-width: 1165px){
+    .my_skills{
+        gap: 50px;
+        margin-top: 0;
+    }
+    .my_skills_text h3{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 578px){
+    .footer{
+        flex-direction: column;
+        gap:40px;
+    }
+    .video{
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 200px){
+    .vkontakte{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 345px){
+    .data{
+        flex-direction: column;
+    }
+    .information{
+        max-width: 345px;
     }
 }
