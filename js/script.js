@@ -81,7 +81,14 @@ document.querySelector('.themes').addEventListener('change',(event) =>{
     if (event.target.nodeName === 'INPUT'){
         document.documentElement.classList.remove('dark', 'light', 'summer');
         document.documentElement.classList.add(event.target.value);
+        localStorage.setItem('selectedTheme', event.target.value);
         }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('selectedTheme');
+    if (savedTheme) {
+        document.documentElement.classList.add(savedTheme);
+    }
 });
     
 // Изменение размера шрифта на сайте
@@ -89,6 +96,13 @@ document.querySelector('.buttons').addEventListener('click',(event) =>{
     if (event.target.nodeName === 'BUTTON'){
         document.documentElement.classList.remove('reset', 'increaseSize1', 'increaseSize2');
         document.documentElement.classList.add(event.target.value);
+        localStorage.setItem('selectedSize', event.target.value);
+    }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const savedSize = localStorage.getItem('selectedSize');
+    if (savedSize) {
+        document.documentElement.classList.add(savedSize);
     }
 });
 
