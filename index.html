@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class = "light reset">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class = "body-wrapper">
     <header class="header">
         <div class="wrapper">
             <div class="header_wrapper">
@@ -18,7 +19,7 @@
                         <img src ="./img/WD.svg" alt = "Дизайн и верстка" class = "header_logo_picture">
                     </a>
                 </div>
-                <nav class="header_nav">
+                <nav class="header_nav" id = "menu">
                     <ul class="header_list">
                         <li class="header_element">
                             <a href = "#home" class = "header_link">
@@ -47,26 +48,46 @@
                         </li>
                     </ul>
                 </nav>
+                <button id = "settings-button" class = "settings-btn"><img src="img/gear1.png" alt = "button"></button>
+                <button class = "burger-btn" id = "burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="settings" id = "settings">
+                    <div class="fontSize">Размер текста:</div>
+                    <div class="buttons">
+                        <button class="btn" value = "reset" checked>А</button>
+                        <button class="btn" value = "increaseSize1">А</button>
+                        <button class="btn" value = "increaseSize2">А</button>
+                    </div>
+                    <div class="colorTheme">Темы:</div>
+                    <div class="themes">
+                        <label><input type = "radio" name = "theme" value = "light" checked> Светлая </label>
+                        <label><input type = "radio" name = "theme" value = "dark"> Темная </label>
+                        <label><input type = "radio" name = "theme" value = "summer"> Летняя </label>
+                    </div>
+                    <div class="hideImg">Показать/скрыть изображения:</div>
+                    <button type = "submit" class = "image_button" onclick = "myImg()"><img src="img/image.png" width="50px" height="50px" class = "image1" alt = "button"></button>
+                </div>
             </div>
         </div>
-    </header>
+        </header>
     <main class="main">
         <div class = "start" id = "home">
             <div class="start_elements wrapper">
-                <img src ="img/Frame.svg" alt = "Дизайн и верстка" class = "start_picture">
+                <img src ="img/Frame.svg" id = "img_1" alt = "Дизайн и верстка" class = "start_picture _elementsAnimation _noHiding">
                 <div class = "start_title">
-                    <h1>Дизайн и верстка</h1>
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    <button type = "submit" class = "write_me button">написать мне</button>
+                    <h1 class = "start_heading _elementsAnimation _noHiding">Дизайн и верстка</h1>
+                    <p class = "start_text _elementsAnimation _noHiding">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                    <button type = "submit" class = "write_me button _elementsAnimation _noHiding">написать мне</button>
                 </div>
             </div>
         </div>
         <div class="about_me wrapper_text" id = "about_author">
-            <h2> Обо мне </h2>  
-            <p> Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            <h2 class = "about_me_title _elementsAnimation _noHiding"> Обо мне </h2>  
+            <p class = "about_me_paragraph _elementsAnimation _noHiding"> Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
         </div>
         <div class="blue_projects">
-            <ul class="project_card wrapper">
+            <ul class="project_card wrapper _elementsAnimation _noHiding">
                  <li class="card-pic">
                     <img src="img/40proektov.png" class="card-pic-thumb">
                 </li>
@@ -89,35 +110,35 @@
         </div>
         <div class="my_skills wrapper">
             <div class = "my_skills_text">
-                <h3>Мои навыки</h3>
-                <p class = "Adobe">Adobe Photoshop</p>
-                <div class="scale">
+                <h3 class = "skills_title _elementsAnimation _noHiding">Мои навыки</h3>
+                <p class = "Adobe _elementsAnimation _noHiding">Adobe Photoshop</p>
+                <div class="scale _elementsAnimation _noHiding">
                     <div class="scale_gray"></div>
                     <div class="scale_blue"></div>
                 </div>
-                <p class = "Adobe">Adobe Photoshop</p>
-                <div class="scale">
+                <p class = "Adobe _elementsAnimation _noHiding">Adobe Photoshop</p>
+                <div class="scale _elementsAnimation _noHiding">
                     <div class="scale_gray"></div>
                     <div class="scale_blue"></div>
                 </div>
-                <p class = "Adobe">Adobe Photoshop</p>
-                <div class="scale">
+                <p class = "Adobe _elementsAnimation _noHiding">Adobe Photoshop</p>
+                <div class="scale _elementsAnimation _noHiding">
                     <div class="scale_gray"></div>
                     <div class="scale_blue"></div>
                 </div>
             </div>
-            <img src = "img/Rectangle 3.png" class = "fotoAuthor">
+            <img src = "img/Rectangle 3.png" id = "img_2" class = "fotoAuthor _elementsAnimation _noHiding">
         </div>
         <div class="how_work" id = "how-I-working">
-            <div class="how_work_title wrapper_text">
+            <div class="how_work_title wrapper_text _elementsAnimation _noHiding">
                 <h4> Как я работаю </h4>  
                 <p> Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
             </div>
-            <div class="videoclip">
-                <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" class = "video wrapper"></a>
+            <div class="videoclip" id = "img_3">
+                <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" class = "video wrapper _elementsAnimation _noHiding"></a>
             </div> 
         </div>
-        <ul class = "photos" id = "activity">
+        <ul class = "photos _elementsAnimation _noHiding" id = "activity">
             <li class = "photos_element">
                 <a class = "gradient" href = "#!" ><img src = "img/Rectangle 7.png" class = "photochka"></a>
             </li>
@@ -144,7 +165,7 @@
             </li>
         </ul>
         <div class="microsoft wrapper">
-            <ul class="microsoft_list">
+            <ul class="microsoft_list _elementsAnimation _noHiding">
                 <li class="microsoft-elemens">
                     <img src = "img/Rectangle 9.1.svg" class = "microsoft_photo">
                 </li>
@@ -161,8 +182,8 @@
         </div>
         <div class="last-block" id = "contacts">
             <div class="last_text-block wrapper_text">
-                <h5>Хотите веб-сайт?</h5>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <h5 class = "last_title _elementsAnimation _noHiding">Хотите веб-сайт?</h5>
+                <p class = "last_paragraph _elementsAnimation _noHiding">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
             </div>
             <div class = "data wrapper">
                 <input type ="text" class = "information" placeholder="Ваше имя">
@@ -178,11 +199,11 @@
     </main>
     <footer class = "footer">
         <div class="footer_text">
-            <div class ="name_author">Иванов Иван</div>
+            <div class ="name_author _elementsAnimation">Иванов Иван</div>
             <div class ="rights_protection">(с) 2018. Все права защищены.</div>
         </div>
         <div class = "social_network">
-            <ul class="vkontakte">
+            <ul class="vkontakte _elementsAnimation">
                 <li class="social_network-items">
                     <a href = "#!">
                         <img src = "img/vk-social-network-logo.svg">
@@ -200,6 +221,9 @@
                 </li>
             </ul>
         </div>
-    </footer> 
+    </footer>
+    <div class="go-top">▲</div>
+    <script src = "js/script.js"></script>
+</div>
 </body>
 </html>
